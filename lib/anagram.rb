@@ -6,9 +6,9 @@ class Anagram
     @word = word
   end
   
-  # def match(list_possible_anagrams) 
+  def match(list_possible_anagrams) 
     
-  # end
+  end
   
 end
 
