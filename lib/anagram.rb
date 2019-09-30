@@ -11,6 +11,8 @@ class Anagram
     list_possible_anagrams.each do |possible_word|
       possible_word.each_char do |char|
         if @word.include?(char)
+          count += 1
+        end
       end
     end
   end
