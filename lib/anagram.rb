@@ -10,7 +10,7 @@ class Anagram
     count = 0 
     list_possible_anagrams.each do |possible_word|
       possible_word.each_char do |char|
-        if @word.include
+        if @word.include?(char)
       end
     end
   end
