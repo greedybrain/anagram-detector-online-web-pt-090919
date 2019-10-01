@@ -14,6 +14,9 @@ class Anagram
           count += 1
         end
       end
+      if count == possible_word.length
+        possible_word
+      end
     end
   end
   
