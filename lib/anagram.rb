@@ -7,7 +7,7 @@ class Anagram
   end
   
   def match(list_possible_anagrams) 
-    nil
+    
   end
   
 end
