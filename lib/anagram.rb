@@ -7,6 +7,7 @@ class Anagram
   end
   
   def match(list_possible_anagrams)
+    
     words_of_same_length = list_possible_anagrams.select do |possible_word| 
       possible_word if possible_word.length == @word.length
     end
@@ -17,7 +18,7 @@ class Anagram
     
   end
     
-end
+ end
   
 end
 
