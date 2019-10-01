@@ -7,18 +7,17 @@ class Anagram
   end
   
   def match(list_possible_anagrams)
-    count = 0
-    results = list_possible_anagrams.collect do |possible_word| #check each possible word
-      possible_word.each_char do |char| #each char
-        if @word.include?(char) #word include char?
-          count += 1
-        end
-      end
-      if count == possible_word.length
-        possible_word
-      end
+    words_of_same_length = list_possible_anagrams.select do |possible_word| 
+      possible_word if possible_word.length == @word.length
     end
+
+    words_of_same_length.select do |highly_possible_word|
+      highly_possible_word if highly_possible_word.split('').sort.join('') == @word.split('').sort.join('')
+    end
+    
   end
+    
+end
   
 end
 
