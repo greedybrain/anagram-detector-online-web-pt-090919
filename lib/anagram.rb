@@ -6,7 +6,8 @@ class Anagram
     @word = word
   end
   
-  def match(list_possible_anagrams) 
+  def match(list_possible_anagrams)
+    count = 0
     results = list_possible_anagrams.collect do |possible_word|
       possible_word.each_char do |char|
         
