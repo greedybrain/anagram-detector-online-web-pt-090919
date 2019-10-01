@@ -7,7 +7,9 @@ class Anagram
   end
   
   def match(list_possible_anagrams) 
-    
+    results = list_possible_anagrams.collect do |possible_word|
+      
+    end
   end
   
 end
